@@ -1,0 +1,65 @@
+[
+    {
+        "profileimg": "../assets/images/avatar-mark-webber.webp",
+        "firstname": "Mark",
+        "lastname": "Webber",
+        "action": "reacted to your recent post",
+        "post": "My first tournament today!",
+        "time": "1m ago",
+        "notification_checked": false
+    },
+    {
+        "profileimg": "../assets/images/avatar-angela-gray.webp",
+        "firstname": "Angela",
+        "lastname": "Gray",
+        "action": "followed you",
+        "time": "5m ago",
+        "notification_checked": false
+    },
+    {
+        "profileimg": "../assets/images/avatar-jacob-thompson.webp",
+        "firstname": "Jacob",
+        "lastname": "Thompson",
+        "action": "has joined your group",
+        "group": "Chess Club",
+        "time": "1 day ago",
+        "notification_checked": false 
+    },
+    {
+        "profileimg": "../assets/images/avatar-rizky-hasanuddin.webp",
+        "firstname": "Rizky",
+        "lastname": "Hasanuddin",
+        "action": "sent you a private message",
+        "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+        "time": "5 days ago",
+        "notification_checked": true
+    },
+    {
+        "profileimg": "../assets/images/avatar-kimberly-smith.webp",
+        "firstname": "Kimberly",
+        "lastname": "Smith",
+        "action": "commented on your picture",
+        "pic": "../assets/images/image-chess.webp",
+        "time": "1 week ago",
+        "notification_checked": true
+    },
+    {
+        "profileimg": "../assets/images/avatar-nathan-peterson.webp",
+        "firstname": "Nathan",
+        "lastname": "Peterson",
+        "action": "reacted to your recent post",
+        "post": "5 end-game strategies to increase your win rate",
+        "time": "2 weeks ago",
+        "notification_checked": true
+    },
+    {
+        "profileimg": "../assets/images/avatar-anna-kim.webp",
+        "firstname": "Anna",
+        "lastname": "Kim",
+        "action": "left the group",
+        "group": "Chess Club",
+        "time": "2 weeks ago",
+        "notification_checked": true
+    }
+
+]

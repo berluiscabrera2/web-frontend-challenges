@@ -1,0 +1,49 @@
+.notifications{
+    width: 40%;
+    height: 53rem;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 3rem;
+    padding: 0 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notifications__header{
+    display: flex;
+    padding: 2rem 0;
+}
+
+.notifications__headerLeft{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.notifications__headerRight{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.notifications__headerLeft > h1{
+    font-size: 1.5rem;
+}
+
+.notifications__headerLeft > h2{
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.5rem;
+    width: 1rem;
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.notifications__headerRight > button{
+    padding: 0;
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 12%, 42%);
+    border: none;
+    cursor: pointer;
+}

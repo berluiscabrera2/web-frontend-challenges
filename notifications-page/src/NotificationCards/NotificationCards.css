@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('ttf');
+
+    font-family: 'PlusJakartaSans-ExtraBold';
+    src: url('../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf') format('ttf');
+
+    font-family: 'PlusJakartaSans-Medium';
+    src: url('../assets/fonts/static/PlusJakartaSans-Medium.ttf') format('ttf');
+}
+
+.notificationcards{
+    margin: 1rem auto;
+    height: 100%;
+}
+
+.notificationcards__list{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.notificationcards__list > img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.notificationcards__listinfo{
+    width: 100%;
+}
+
+.notificationcards__listinfo > p{
+    display: inline;
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-size: 0.9rem;
+    color: hsl(219, 12%, 42%);
+}
+
+.notificationcards__listinfo > p > b{
+    color: hsl(224, 21%, 14%);
+}
+
+.notificationcards__listinfo > p > span{
+    color: grey;
+    font-weight: 600;
+}
+
+#group{
+    color: hsl(219, 85%, 26%);
+    font-weight: 600;
+}
+
+#dot{
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#time{
+    display: block;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+    color: hsl(219, 14%, 63%);
+    font-weight: 200;
+}
+
+#message{
+    display: block;
+    margin-top: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.imgChess{
+    float: right;
+}
