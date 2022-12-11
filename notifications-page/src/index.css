@@ -1,23 +1,105 @@
-@font-face {
-    font-family: 'PlusJakartaSans';
-    src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('ttf');
+:root{
+    
+    --clr-primary-red: hsl(1, 90%, 64%);
+    --clr-primary-blue: hsl(219, 85%, 26%);
 
-    font-family: 'PlusJakartaSans-ExtraBold';
-    src: url('../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf') format('ttf');
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --clr-neutral-lightGrayishBlue1:hsl(211, 68%, 94%);
+    --clr-neutral-lightGrayishBlue2: hsl(205, 33%, 90%);
+    --clr-neutral-grayishBlue:hsl(219, 14%, 63%);
+    --clr-neutral-darkGrayishBlue: hsl(219, 12%, 42%);
+    --clr-neutral-veryDark: hsl(224, 21%, 14%);
 
-    font-family: 'PlusJakartaSans-Medium';
-    src: url('../assets/fonts/static/PlusJakartaSans-Medium.ttf') format('ttf');
+    --ff-primary: 'PlusJakartaSans-ExtraBold', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 800;
+
+    --fs-header: 1.5rem;
+    --fs-notification: 1.2rem;
+    --fs-paragraph: 0.8rem;
+
+    --img-height-width: 2.5rem;
 }
 
+@media (max-width: 50em){
+    :root{
+        --fs-header: 0.6rem;
+        --fs-notification: 0.6rem;
+        --fs-paragraph: 0.5rem;
+        --fs-details: 0.3rem;
+        --img-height-width: 1.5rem;
+    }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: hsl(210, 60%, 98%);
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
 
-h1{
-    font-family: 'PlusJakartaSans-ExtraBold', sans-serif;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  background-color: var(--clr-neutral-veryLightGrayishBlue);
+  font-family: var(--ff-primary);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

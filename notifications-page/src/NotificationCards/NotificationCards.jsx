@@ -2,14 +2,14 @@ import React from 'react'
 
 import './NotificationCards.css'
 
-function NotificationCards({notificationList, setNotificationList, notificationsNumber, setCounter}) {
+function NotificationCards({notificationList, setNotificationList, setCounter}) {
 
     const handleClick = ( e, index ) => {
         e.preventDefault();
         let copyNotificationList =  notificationList.map( (data, i) => {
             if(i === index){
+                if(data['notification_checked'] === false) setCounter(prevState => prevState - 1);
                 data = {...data, "notification_checked": true};
-                setCounter(prevState => prevState - 1);
             };
             return data;
         });
